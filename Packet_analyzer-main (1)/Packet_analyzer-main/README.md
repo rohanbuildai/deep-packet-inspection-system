@@ -1,6 +1,6 @@
 # DPI Engine - Deep Packet Inspection System (Python)
 
-This is the **Python rebuild** of the original C++ DPI Engine project. The concept, architecture, and all functionality are identical — only the implementation language has changed from C++ to Python.
+
 
 ---
 
@@ -429,26 +429,16 @@ python3 generate_test_pcap.py
 
 ---
 
-## C++ → Python Mapping
+running instructions :- run these commands
 
-| C++ File | Python Equivalent |
-|----------|-------------------|
-| `include/types.h` + `src/types.cpp` | `include/dpi_types.py` |
-| `include/pcap_reader.h` + `src/pcap_reader.cpp` | `include/pcap_reader.py` |
-| `include/packet_parser.h` + `src/packet_parser.cpp` | `include/packet_parser.py` |
-| `include/sni_extractor.h` + `src/sni_extractor.cpp` | `include/sni_extractor.py` |
-| `include/rule_manager.h` + `src/rule_manager.cpp` | `include/rule_manager.py` |
-| `include/thread_safe_queue.h` | `include/thread_safe_queue.py` |
-| `include/connection_tracker.h` + `src/connection_tracker.cpp` | `include/connection_tracker.py` |
-| `include/fast_path.h` + `src/fast_path.cpp` | `include/fast_path.py` |
-| `include/load_balancer.h` + `src/load_balancer.cpp` | `include/load_balancer.py` |
-| `include/dpi_engine.h` + `src/dpi_engine.cpp` | `include/dpi_engine.py` |
-| `src/main.cpp` | `src/main.py` |
-| `src/main_simple.cpp` | `src/main_simple.py` |
-| `src/main_working.cpp` | `src/main_working.py` |
-| `src/main_dpi.cpp` | `src/main_dpi.py` |
-| `src/dpi_mt.cpp` | `src/dpi_mt.py` |
+python3 src/main_working.py test_dpi.pcap output.pcap --block-app YouTube
+python3 src/dpi_mt.py test_dpi.pcap output.pcap --block-app YouTube --lbs 2 --fps 2
+
+
+
+
 
 Happy learning! 🚀
-#   d e e p - p a c k e t - i n s p e c t i o n - s y s t e m  
+#   d e e p - p a c k e t - i n s p e c t i o n - s y s t e m 
+ 
  
