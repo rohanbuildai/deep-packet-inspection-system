@@ -435,6 +435,9 @@ python3 src/main_working.py test_dpi.pcap output.pcap --block-app YouTube
 python3 src/dpi_mt.py test_dpi.pcap output.pcap --block-app YouTube --lbs 2 --fps 2
 
 
+replace block app "youtube" with the one you want 
+
+
 
 
 
